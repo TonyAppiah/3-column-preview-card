@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.main-container {
+    background: #f2f2f2;
+}
+
+
+.container {
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    
+}
+
+
+.box {
+    padding: 2.5rem;
+    font-size: 15px;
+}
+
+
+img {
+    width: 3rem;
+}
+
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: xx-large;
+}
+
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffffff8e;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 3rem;
+    padding: .8rem 2rem;
+    text-transform: capitalize;
+    transition: padding 2s, background-color 2s;
+}
+
+
+button:hover {
+    padding: 0.8rem 3rem;
+    background-color: black;
+}
+
+
+.sedans {
+    background: #e38826;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.suvs {
+    background: #006970;
+}
+
+
+.luxury {
+    background: #004241;
+    border-radius: 0 0 8px 8px;
+}
+
+
+.sedans-button {
+    color: #e38826;
+}
+
+
+.suvs-button {
+    color: #006970;
+}
+
+
+.luxury-button {
+     color: #004241;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 999px) {
+  
+    .container{        
+        grid-template: 1fr / repeat(2, 1fr);
+        padding: 5rem 3rem;        
+    }
+
+
+    img {
+        width: 4rem;
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+    p {        
+        font-size: 17px;    
+        margin-bottom: 3.5rem;    
+    }
+
+
+    button {
+        padding: .9rem 2rem;
+        font-size: 17px;
+    }
+
+
+    .sedans {
+        border-radius: 8px 0 0 0;
+    }
+
+
+    .suvs {
+        border-radius: 0 8px 8px 0;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    .main-container {        
+        display: flex;        
+        justify-content: center;
+    }
+
+
+    .container {        
+        grid-template: 1fr / repeat(3, 1fr);
+        padding: 8.5rem .5rem;
+        max-width: 70rem;
+    }
+
+
+    .box {
+        padding: 4rem 3.2rem;
+    }
+
+
+    img {
+        width: 5rem;
+    }
+    
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    
+    p {
+        margin-bottom: 2rem;
+        font-size: 20px;
+        margin-bottom: 6rem;
+    }
+
+
+    button {
+        padding: 1rem 2.5rem;
+        font-size: 20px;
+    }
+
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+    
+
+    .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+}
